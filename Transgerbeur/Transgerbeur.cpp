@@ -53,7 +53,7 @@ int main() {
 	pa1.poids = 10;
 	//strcpy(pa1.ref,"");
 
-	EETAT etat = EETAT::vide;
+	EETAT etatC1 = EETAT::vide;
 
 	UCont cont = { pa1 };
 	cont.rouleau = ro1;
@@ -77,6 +77,14 @@ int main() {
 	Ensemble[0] = c1;
 	Ensemble[2] = c2;
 	
+	// affichage des tailles
+	cout << endl << "taille de ro1 : " << sizeof(ro1);
+	cout << endl << "taille de pa1 : " << sizeof(pa1);
+	cout << endl << "taille de etatC1 : " << sizeof(etatC1);
+	cout << endl << "taille de cont : " << sizeof(cont);
+	cout << endl << "taille de c1 : " << sizeof(c1);
+	cout << endl << "taille de c2 : " << sizeof(c2);
+	cout << endl << "taille de Ensemble : " << sizeof(Ensemble);
 
 
 	
