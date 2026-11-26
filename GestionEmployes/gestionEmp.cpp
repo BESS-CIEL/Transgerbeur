@@ -33,12 +33,16 @@ void afficheEmployes(Semployes& emp) {
 	cout << endl << "Date de prise de fonctions : " << emp.dates.datePriseFonction;
 }
 
+void infoEmployes(Semployes& emp) {
+	saisieEmployes(emp);
+	afficheEmployes(emp);
+}
+
 int main() {
 	cout << endl << "Gestion Employes";
 
 	Semployes emp1;
-	saisieEmployes(emp1);
-	afficheEmployes(emp1);
+	infoEmployes(emp1);
 
 
 
