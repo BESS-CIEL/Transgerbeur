@@ -25,12 +25,20 @@ void saisieEmployes(Semployes& emp) {
 	cin >> emp.dates.datePriseFonction;
 }
 
+void afficheEmployes(Semployes& emp) {
+	cout << endl << "		Informations sur l'employe  ";
+	cout << endl << "Nom : " << emp.nom;
+	cout << endl << "Prenom :" << emp.prenom;
+	cout << endl << "Date d'embauche : " << emp.dates.dateEmbauche;
+	cout << endl << "Date de prise de fonctions : " << emp.dates.datePriseFonction;
+}
+
 int main() {
 	cout << endl << "Gestion Employes";
 
 	Semployes emp1;
 	saisieEmployes(emp1);
-	// cout << emp1.nom << endl << emp1.prenom	<< endl << emp1.dates.dateEmbauche << endl << emp1.dates.datePriseFonction;
+	afficheEmployes(emp1);
 
 
 
