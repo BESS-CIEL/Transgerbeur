@@ -8,7 +8,11 @@ using namespace std;
 struct Sdates {
 	char* dateEmbauche, datePriseFonction;
 };
-
+struct Semployes {
+	char* nom;
+	char* prenom;
+	Sdates dates;
+};
 
 
 
